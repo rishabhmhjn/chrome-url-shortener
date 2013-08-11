@@ -45,18 +45,17 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  $('.copy-btn').click(function() {
-    $resultUrl.focus();
-    var url = $resultUrl.val();
-    $resultUrl.hide();
-    $msgCopy.show();
-    setTimeout(function() {
-      $msgCopy.fadeOut('slow', function() {
-        $resultUrl.show();
-      });
-    }, 1000);
-  });
-
+  // $('.copy-btn').click(function() {
+  //   $resultUrl.focus();
+  //   // var url = $resultUrl.val();
+  //   $resultUrl.hide();
+  //   $msgCopy.show();
+  //   setTimeout(function() {
+  //     $msgCopy.fadeOut('slow', function() {
+  //       $resultUrl.show();
+  //     });
+  //   }, 1000);
+  // });
 
   $resultUrl.click(function() {
     this.select();

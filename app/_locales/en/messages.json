@@ -1,6 +1,6 @@
 {
   "appName": {
-    "message": "url shortener",
+    "message": "Chrome browser action for url shortening",
     "description": "The name of the application"
   },
   "appDescription": {
