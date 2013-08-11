@@ -1,0 +1,57 @@
+/* Will be compiled down to a single stylesheet with your sass files */
+
+html { /* Defaults css for cssmin process */ }
+
+
+body {
+  width: 250px;
+  height: 100px;
+  padding: 10px;
+}
+
+.pure-g {
+  box-sizing: border-box;
+  margin-bottom: 1.0em;
+}
+
+.pure-form button.pure-button-xsmall {
+  font-size: 70%;
+}
+
+.pure-form button.pure-button-small {
+  font-size: 85%;
+}
+
+.pure-form button.pure-button-large {
+  font-size: 110%;
+}
+
+.pure-form button.pure-button-xlarge {
+  font-size: 125%;
+}
+
+
+.pure-g .action-btn {
+  margin-left: 2.5em;
+}
+
+
+.result-main {
+  /*display: none;*/
+}
+
+.pure-form input.result-url {
+  display:inline-block;
+  vertical-align:middle;
+  color: #0077CC;
+  font-weight: bold;
+}
+
+.msg-copy {
+  vertical-align: middle;
+  display: none;
+}
+
+.copy-btn {
+
+}
