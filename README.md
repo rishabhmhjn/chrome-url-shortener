@@ -1,6 +1,6 @@
 chrome-url-shortener
 ====================
-Avaiable on Chrome Web Store - http://goo.gl/kIyHC2
+Available on Chrome Web Store - http://goo.gl/kIyHC2
 A simple extension for URL shortening using http://goo.gl
 
 Techs

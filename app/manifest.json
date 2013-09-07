@@ -23,7 +23,7 @@
       "19": "images/icon_048.png",
       "38": "images/icon_128.png"
     },
-    "default_title": "url shortener",
+    "default_title": "__MSG_appName__",
     "default_popup": "popup.html"
   }
 }
