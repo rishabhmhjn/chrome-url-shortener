@@ -28,7 +28,7 @@ body {
 }
 
 .pure-g .action-btn {
-  margin-left: 2.5em;
+  /*margin-left: 2.5em;*/
 }
 
 .result-main {
@@ -40,7 +40,6 @@ body {
   display:inline-block;
   vertical-align:middle;
   color: #0077CC;
-  font-weight: bold;
 }
 
 .msg-copy {
@@ -49,5 +48,5 @@ body {
 }
 
 .copy-btn {
-
+  cursor: pointer;
 }

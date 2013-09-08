@@ -29,15 +29,23 @@
   <!-- CHROME EXTENSION POPUP -->
   <form class="pure-form">
     <div class="pure-g">
-      <div class="pure-u-3-5">
-        <input type="url" name="url" placeholder="URL" />
+      <div class="pure-u-4-5">
+        <input type="url" style="width: 95%;" name="url" placeholder="URL" />
       </div>
       <div class="pure-u-1-5">
-        <button type="button" class="pure-button pure-button-small pure-button-primary action-btn get-url-btn">Go!</button>
+        <button type="button" style="padding-right: 10px; padding-left: 10px;" class="pure-button pure-button-small pure-button-primary action-btn get-url-btn">Go!</button>
       </div>
     </div>
     <div class="pure-g result-main">
-      <input type="url" class="result-url pure-input-1" readonly value="dummy URL" /> <em class="msg-copy">Copied to clipboard!</em>
+      <div class="pure-u-7-8">
+        <input type="url" style="width: 95%;" class="result-url" readonly value="dummy URL" />
+      </div>
+      <div class="pure-u-1-8">
+        <img class="copy-btn" src="/images/icon-clipboard.png" />
+      </div>
+      <div class="pure-u-1">
+        <em class="msg-copy">Copied to clipboard</em>
+      </div>
     </div>
   </form>
 </body>

@@ -57,6 +57,17 @@ document.addEventListener('DOMContentLoaded', function() {
   //   }, 1000);
   // });
 
+  $('.copy-btn').click(function() {
+    $resultUrl.select();
+    $msgCopy.show();
+    document.execCommand("copy", false, null);
+    setTimeout(function() {
+      $msgCopy.fadeOut('slow', function() {
+        $resultUrl.show();
+      });
+    }, 1000);
+  });
+
   $resultUrl.click(function() {
     this.select();
   })

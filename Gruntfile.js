@@ -261,7 +261,7 @@ module.exports = function(grunt) {
         compress: {
             dist: {
                 options: {
-                    archive: 'package/url shortener.zip'
+                    archive: 'package/url_shortener.zip'
                 },
                 files: [{
                     expand: true,
