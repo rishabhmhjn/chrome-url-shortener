@@ -9,15 +9,22 @@
     "48": "images/icon_048.png",
     "128": "images/icon_128.png"
   },
-  "permissions": [
-    "tabs"
-  ],
-  "default_locale": "en",
   "background": {
     "scripts": [
+      "scripts/chrome_ex_oauthsimple.js",
+      "scripts/chrome_ex_oauth.js",
       "scripts/background.js"
     ]
   },
+  "permissions": [
+    "tabs",
+    "https://www.googleapis.com/auth/urlshortener/*",
+    "https://www.googleapis.com/auth/userinfo.profile/*",
+    "https://www.google.com/accounts/OAuthGetRequestToken",
+    "https://www.google.com/accounts/OAuthAuthorizeToken",
+    "https://www.google.com/accounts/OAuthGetAccessToken"
+  ],
+  "default_locale": "en",
   "browser_action": {
     "default_icon": {
       "19": "images/icon_048.png",

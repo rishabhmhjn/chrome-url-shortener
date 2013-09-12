@@ -45,18 +45,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  // $('.copy-btn').click(function() {
-  //   $resultUrl.focus();
-  //   // var url = $resultUrl.val();
-  //   $resultUrl.hide();
-  //   $msgCopy.show();
-  //   setTimeout(function() {
-  //     $msgCopy.fadeOut('slow', function() {
-  //       $resultUrl.show();
-  //     });
-  //   }, 1000);
-  // });
-
   $('.copy-btn').click(function() {
     $resultUrl.select();
     $msgCopy.show();
@@ -70,5 +58,42 @@ document.addEventListener('DOMContentLoaded', function() {
 
   $resultUrl.click(function() {
     this.select();
-  })
+  });
+
+  var bg = chrome.extension.getBackgroundPage();
+
+  if (bg.oauth.hasToken()) {
+    var request = {
+      'method': 'GET',
+      'parameters': {
+        'alt': 'json'
+      }
+    };
+    var url = 'https://www.googleapis.com/oauth2/v1/userinfo';
+
+    bg.oauth.sendSignedRequest(url, function(resp, xhr) {
+      console.log('oauth.sendSignedRequest completed');
+      // console.log(arguments);
+      if (xhr.status == 200) {
+        resp = JSON.parse(resp);
+        console.log(resp);
+
+        $('.loginBlock').append(
+          'Logged in as <a href="' + resp.link + '" target="_blank">' + resp.name + '</a>'
+        );
+      }
+
+
+    }, request);
+
+  } else {
+    $('.loginBlock').append(
+      '<a href="javascript:void(0);" class="do-login">Login</a>'
+    );
+    $('.do-login').click(function() {
+      bg.doLogin();
+    });
+  }
+
+
 });
