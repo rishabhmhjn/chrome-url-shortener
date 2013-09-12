@@ -1,7 +1,15 @@
-chrome-url-shortener
+chrome-url-shortener [![experimental](http://hughsk.github.io/stability-badges/dist/experimental.svg)](http://github.com/hughsk/stability-badges)
 ====================
-Available on Chrome Web Store - http://goo.gl/kIyHC2
+Available on Chrome Web Store - http://goo.gl/kIyHC2  
 A simple extension for URL shortening using http://goo.gl
+
+### Features
+- goo.gl based short url
+- Google OAuth for short url management
+- Instant QR code generator for short url
+
+
+[![Available on Chrome Web Store](https://raw.github.com/rishabhmhjn/chrome-url-shortener/master/assets/cws_640_400.png)](http://goo.gl/kIyHC2)
 
 Techs
 -----

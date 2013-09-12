@@ -144,7 +144,8 @@ module.exports = function(grunt) {
             },
             html: [
                 '<%= yeoman.app %>/popup.html',
-                '<%= yeoman.app %>/options.html'
+                '<%= yeoman.app %>/options.html',
+                '<%= yeoman.app %>/chrome_ex_oauth.html'
             ]
         },
         usemin: {
