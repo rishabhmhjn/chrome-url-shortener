@@ -18,16 +18,11 @@ var oauth = ChromeExOAuth.initBackgroundPage({
 });
 
 
-
 var doLogin = function() {
-  console.log("doLogin called");
-
-
+  // console.log("doLogin called");
   oauth.authorize(function() {
-    console.log("oauth.authorize callback");
-    console.log(arguments);
-
+    // console.log("oauth.authorize callback");
+    // console.log(arguments);
   });
-
 
 };

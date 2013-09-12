@@ -4,8 +4,24 @@ html { /* Defaults css for cssmin process */ }
 
 body {
   width: 250px;
-  padding: 10px;
+  padding: 5px;
 }
+
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
 
 .pure-g {
   box-sizing: border-box;
@@ -31,6 +47,10 @@ body {
   /*margin-left: 2.5em;*/
 }
 
+.pure-u-1 {
+  margin-top: 0.75em;
+}
+
 .result-main {
   display: none;
   margin-top: 0.75em;
@@ -43,10 +63,26 @@ body {
 }
 
 .msg-copy {
-  vertical-align: middle;
   display: none;
+}
+.msg-copy small {
+  vertical-align: middle;
 }
 
 .copy-btn {
   cursor: pointer;
+}
+
+.login-block {
+}
+
+.login-block small {
+  padding-bottom: 10px;
+  float:right;
+}
+
+
+.qr-block {
+  text-align: center;
+  display: none;
 }
